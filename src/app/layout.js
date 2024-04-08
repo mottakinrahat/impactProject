@@ -15,11 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <Providers>
       <html lang="en">
-        <Navbar />
         <body className={inter.className}>
           <AppRouterCacheProvider>{children} </AppRouterCacheProvider>
         </body>
-        <Footer />
       </html>
     </Providers>
   );
